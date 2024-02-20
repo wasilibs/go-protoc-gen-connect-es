@@ -28,7 +28,7 @@ jobs:
           cache-dependency-path: buildtools/wasm/pnpm-lock.yaml
       
       - name: Update upstream
-        run: pnpm up --latest "@connectrpc/*""
+        run: pnpm up --latest "@connectrpc/*"
         working-directory: buildtools/wasm
       
       - run: git diff --exit-code
@@ -39,7 +39,7 @@ jobs:
       # bufbuild when doing so.
       - name: Update bufbuild
         if: steps.check-diff.outcome == 'failure'
-        run: pnpm up --latest "@bufbuild/*""
+        run: pnpm up --latest "@bufbuild/*"
         working-directory: buildtools/wasm
 
       - run: go run mage updateLibs
