@@ -1,6 +1,6 @@
 # go-protoc-gen-connect-es
 
-go-protoc-gen-connect-es is a distribution of [protoc-gen-connect-es][1] that can be built with Go. 
+go-protoc-gen-connect-es is a distribution of [protoc-gen-connect-es][1] that can be built with Go.
 It does not actually reimplement any functionality of connect-es in Go, instead packaging it with the
 lightweight JS runtime [QuickJS][6], and executing with the pure Go Wasm runtime [wazero][2].
 This means that `go install` or `go run` can be used to execute it, with no need to rely on external
@@ -28,7 +28,10 @@ version: v1
 plugins:
   - plugin: grpc_python
     out: out/python
-    path: ["go", "run", "github.com/wasilibs/go-protoc-gen-connect-es/cmd/protoc-gen-connect-es@latest"]
+    path:
+      - "go"
+      - "run"
+      - "github.com/wasilibs/go-protoc-gen-connect-es/cmd/protoc-gen-connect-es@latest"
 ```
 
 This makes it possible to have full protobuf/gRPC generation with no installation of tools,
