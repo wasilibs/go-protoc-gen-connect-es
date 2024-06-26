@@ -29,11 +29,9 @@ plugins:
   - plugin: grpc_python
     out: out/python
     path:
-      [
-        "go",
-        "run",
-        "github.com/wasilibs/go-protoc-gen-connect-es/cmd/protoc-gen-connect-es@latest",
-      ]
+      - "go"
+      - "run"
+      - "github.com/wasilibs/go-protoc-gen-connect-es/cmd/protoc-gen-connect-es@latest"
 ```
 
 This makes it possible to have full protobuf/gRPC generation with no installation of tools,
