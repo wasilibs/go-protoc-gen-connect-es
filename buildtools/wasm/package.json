@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "esbuild --external:std --bundle protoc-gen-connect-es.ts --format=esm | node hoist-imports.mjs > dist/protoc-gen-connect-es.js"
+    "build": "mkdir -p dist && esbuild --external:std --bundle protoc-gen-connect-es.ts --format=esm | node hoist-imports.mjs > dist/protoc-gen-connect-es.js"
   },
   "keywords": [],
   "author": "",
