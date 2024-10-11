@@ -12,8 +12,8 @@ devDependencies:
     specifier: 1.10.0
     version: 1.10.0
   '@connectrpc/protoc-gen-connect-es':
-    specifier: ^1.5.0
-    version: 1.5.0
+    specifier: ^1.6.0
+    version: 1.6.0
   '@types/quickjs':
     specifier: github:Gottox/quickjs-dts
     version: github.com/Gottox/quickjs-dts/c4bbd816ce58ba0b8f40eaef960f31b49f737bcc
@@ -43,13 +43,13 @@ packages:
       - supports-color
     dev: true
 
-  /@connectrpc/protoc-gen-connect-es@1.5.0:
-    resolution: {integrity: sha512-W3FX/mFPEY3rOIiIbxxUnIpQOPeFrwyhNL5m/JGBJ1lh5PAF0FH4WImJsnN9UAJR1HMkwf6RMfKVLuxFqu3KTA==}
+  /@connectrpc/protoc-gen-connect-es@1.6.0:
+    resolution: {integrity: sha512-/cyCdYmz6enZqyZpBM+WaaI2j8GN12/jXTzP2x7b500hywqRFl13wyjRgTJZ4qk04TTt62quvSgjefAZQ2YZ1g==}
     engines: {node: '>=16.0.0'}
     hasBin: true
     peerDependencies:
       '@bufbuild/protoc-gen-es': ^1.10.0
-      '@connectrpc/connect': 1.5.0
+      '@connectrpc/connect': 1.6.0
     peerDependenciesMeta:
       '@bufbuild/protoc-gen-es':
         optional: true
