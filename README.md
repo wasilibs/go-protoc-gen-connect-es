@@ -1,3 +1,5 @@
+_This project is archived because connect-es v2 does not require any code generation so there is nothing to build!_
+
 # go-protoc-gen-connect-es
 
 go-protoc-gen-connect-es is a distribution of [protoc-gen-connect-es][1] that can be built with Go.
